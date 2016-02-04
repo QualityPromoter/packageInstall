@@ -1,0 +1,155 @@
+# install.packages(c("rj", "rj.gd"), repos="http://download.walware.de/rj-2.0")
+
+# Install the following in terminal:
+# gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include 
+install.packages("devtools", dependencies = TRUE)
+
+require(devtools)
+install.packages('curl', repos = 'http://cran.r-project.org')
+library(curl)
+install.packages("RCurl", repos = "http://cran.us.r-project.org")
+
+install.packages(c("httr", "XML"), repos = "http://cran.us.r-project.org")
+
+# https://systematicinvestor.wordpress.com/systematic-investor-toolbox/
+curl_download('http://www.systematicportfolio.com/SIT.tar.gz', 'sit', mode = 'wb', quiet = FALSE)
+install.packages('sit', repos = NULL, type = 'source')
+install.packages("quantmod", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("PerformanceAnalytics", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("PortfolioAnalytics", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("parma", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("forecast", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages('iterators', repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("DEoptim", repos = 'http://cran.cnr.Berkeley.edu/')
+
+# install.packages("LSPM", repos = "http://R-Forge.R-project.org", type = "source")
+
+install.packages("downloader", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("TTR", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("quantstrat", repos = "http://R-Forge.R-project.org", type = "source")
+install.packages("xts", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("ROI", repos='http://cran.cnr.Berkeley.edu/')
+
+require(devtools)
+install.packages("RCurl", repos='http://cran.cnr.Berkeley.edu/')
+devtools::install_github('dmlc/xgboost', subdir = 'R-package') # fast modeling algorithm
+
+
+devtools::install_github("gsee/qmao")
+install.packages("quadprog", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("timeSeries", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("TSA", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("tseries", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("urca", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("foreach", repos = 'http://cran.r-project.org') 
+install.packages("data.table", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("ggplot2", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("scales", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("knitr", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("corrplot", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("FField", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("gridExtra", repos='http://cran.cnr.Berkeley.edu/')
+
+install.packages("mvtnorm", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("boot", repos = 'http://cran.cnr.Berkeley.edu/')
+
+# Modeling
+install.packages("lattice", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("gclus", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("lavaan", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("mclust", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("caret", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("lme4", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("mlogit", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("sem", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("survival", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("truncreg", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("chron", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("lubridate", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("scatterplot3d", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("quadprog", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("robust", repos='http://cran.cnr.Berkeley.edu/')
+install.packages("YieldCurve", repos='http://cran.cnr.Berkeley.edu/')
+
+install.packages("pROC", repos='http://cran.cnr.Berkeley.edu/') # Area Under the Curve (AUC) functions
+#### install.packages("RJSONIO", repos = "http://www.omegahat.org/R", type = "source")
+
+install.packages("evir", repos='http://cran.cnr.Berkeley.edu/')
+
+source("http://www.rmetrics.org/Rmetrics.R")
+install.Rmetrics()
+
+install.packages("FinancialInstrument", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("FRAPO", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("RJSONIO", repos = "http://www.omegahat.org/R", type = "source")
+
+require(devtools)
+install_github("IlyaKipnis/IKTrading")
+install_github(repo="IlyaKipnis/DSTrading")
+
+install.packages("dplyr", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("XLConnect", type ="source", repos ='http://cran.cnr.Berkeley.edu/')
+install.packages("RMySQL", repos = 'http://cran.cnr.Berkeley.edu/')
+
+install.packages("calibrate", repos ='http://cran.cnr.Berkeley.edu/')
+install.packages("testthat", repos = 'http://cran.cnr.Berkeley.edu/')
+# http://stackoverflow.com/questions/26210317/installation-of-rodbc-roracle-packages-on-os-x-mavericks/26219189#26219189
+install.packages("RODBC", type = "source", repos = 'http://cran.cnr.Berkeley.edu/')
+install.packages("roxygen2", repos ='http://cran.cnr.Berkeley.edu/')
+
+## Spatial: Must be installed before Xcode
+install.packages("sp")
+install.packages("png")
+install.packages("RgoogleMaps")
+install.packages("proto")
+install.packages("maps")
+install.packages("ggmap")
+install.packages("maptools")
+install.packages("rgeos")
+install.packages("rgdal")
+install.packages("raster")
+install.packages("OpenStreetMap")
+
+install.packages("foreign")
+install.packages("fields")
+install.packages("spam")
+install.packages("rworldmap")
+install.packages("gridExtra")
+install.packages("reshape")
+
+# Network Graph
+source("https://bioconductor.org/biocLite.R")
+biocLite("graph")
+
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
+biocLite("Rgraphviz")
+
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
+biocLite("RBGL")
+
+install.packages("igraph")
+
+install.packages("gRbase")
+
+# s4 oop
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
+biocLite("GenomicRanges")
+
+source("http://www.bioconductor.org/biocLite.R")
+biocLite("ALL")
+
+install.packages("pryr")
+
+update.packages()
